@@ -9,7 +9,7 @@ import Login from "../Login/Login";
 import Home from "../home";
 import Register from "../Login/Register";
 import Admin from "../Admin/Admin";
-import logo from "../images/bus.png";
+import logo from "../images/busimage.png";
 import Payment from "../payment/Payment";
 import ContactUs from "../Login/ContactUs";
 import Seat from "../Components/seat";
@@ -26,7 +26,7 @@ class Navbar extends Component {
   }
 
   componentDidMount() {
-    const username = localStorage.getItem("blueName");
+    const username = localStorage.getItem("starName");
     this.setState({
       user: username,
     });
@@ -37,7 +37,7 @@ class Navbar extends Component {
     return (
       <div cals="header">
         <Router>
-          <nav className="navbar navbar-expand-sm navbar-light nav-bar fixed-top">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light nav-bar fixed">
             <button
               className="navbar-toggler"
               type="button"

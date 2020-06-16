@@ -27,7 +27,7 @@ export class Checkout extends Component {
         console.log("seat 1st value-",passengerSeats[0])
     }
     componentDidMount(){
-         userName = localStorage.getItem("blueName");
+         userName = localStorage.getItem("starName");
             this.setState({
             user: userName,
             });

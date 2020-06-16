@@ -1,14 +1,8 @@
-import React, { Component, Fragment } from "react";
+import React, { Component} from "react";
 import axios from 'axios'
-import { BrowserRouter as Router, NavLink, Route, Redirect } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Display from "./display";
-import img from "./images/busimage.png";
-import Dynamic from './Components/dynamic_page'
-import  Navbar  from "./Route/Navbar";
-
-
 
 const initialState = {
   from: "",
@@ -22,7 +16,7 @@ const initialState = {
   data:[]
 };
 var results=[];
-var data=[];
+
 
 
 export class Home extends Component {
@@ -131,7 +125,7 @@ console.log("results- ",results.length)
                 selected={this.state.startDate}
                 onChange={(e) => this.handleData(e)}
                 name="startDate"
-                className="form-control form-control-md"
+                className="form-control form-control-md w-50 mx-auto"
                 minDate={new Date()}
                 placeholderText="Select a day"
               />

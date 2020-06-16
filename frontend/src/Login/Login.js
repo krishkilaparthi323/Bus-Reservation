@@ -6,8 +6,6 @@ import {
   Redirect,
 } from "react-router-dom";
 import "../css/login.css";
-import Navbar from "../Route/Navbar";
-import Register from "./Register";
 import axios from 'axios'
 
 var results;
